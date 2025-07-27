@@ -342,3 +342,77 @@ nav a {
   color: #C271FF;
   font-weight: 600;
 }
+/* Updated Task 4: Membership Section Styling */
+
+.membership-section {
+  background-color: #000000; /* Black background */
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.membership-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+/* Make the word "Free" purple */
+.membership-title {
+  content: "Free ";
+  color: #C271FF; /* Purple */
+}
+
+.membership-title {
+  content: "membership";
+  color: white;
+}
+
+.benefits-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.benefit-item {
+  flex: 1 1 200px;
+  max-width: 220px;
+}
+
+.benefit-item h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.benefit-item p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.divider {
+  width: 160px;
+  height: 2px;
+  background-color: #FFFFFF;
+  margin: 40px auto;
+  opacity: 0.3;
+}
+
+.register-button {
+  background-color: #FFFFFF;      /* White background */
+  color: #C271FF;                 /* Purple text */
+  border: none;
+  padding: 15px 40px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #f2f2f2;
+}
