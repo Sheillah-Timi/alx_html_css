@@ -109,3 +109,131 @@ nav a {
     padding: 12px 24px;
   }
 }
+:root {
+  --font-primary: 'Source Sans Pro', Arial, sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --color-text: #333333;
+  --color-text-light: #666666;
+  --spacing-unit: 1rem;
+}
+
+.testimonial {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: calc(var(--spacing-unit) * 2);
+  text-align: center;
+}
+
+.testimonial__quote {
+  font-family: var(--font-primary);
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-normal);
+  line-height: 1.5;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-unit);
+  quotes: "«" "»";
+}
+
+.testimonial__quote::before {
+  content: open-quote;
+}
+
+.testimonial__quote::after {
+  content: close-quote;
+}
+
+.testimonial__name {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: 1rem;
+  color: var(--color-text);
+  margin-bottom: calc(var(--spacing-unit) / 2);
+}
+
+.testimonial__title {
+  font-family: var(--font-primary);
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  font-style: italic;
+  margin: 0;
+}
+.testimonial {
+  background-color: #C271FF; /* Matching the 'REGISTER FOR FREE' button */
+  color: white;
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.testimonial__quote {
+  font-family: var(--font-primary);
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: white;
+  margin-bottom: 1rem;
+  quotes: "«" "»";
+}
+
+.testimonial__quote::before {
+  content: open-quote;
+}
+
+.testimonial__quote::after {
+  content: close-quote;
+}
+
+.testimonial__name {
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial__title {
+  font-size: 0.875rem;
+  color: #ddd; /* Lighter for visual hierarchy */
+  font-style: italic;
+}
+.testimonial-section {
+  background-color: #C271FF;
+  padding: 4rem 1rem; /* Full-width section padding */
+  width: 100%;
+}
+
+.testimonial {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+.testimonial__quote {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  quotes: "«" "»";
+  margin-bottom: 1rem;
+}
+
+.testimonial__quote::before {
+  content: open-quote;
+}
+
+.testimonial__quote::after {
+  content: close-quote;
+}
+
+.testimonial__name {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial__title {
+  font-size: 0.875rem;
+  color: #eee;
+  font-style: italic;
+}
