@@ -237,3 +237,108 @@ nav a {
   color: #eee;
   font-style: italic;
 }
+:root {
+  --font-primary: 'Helvetica Neue', Arial, sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --color-text: #333333;
+  --color-text-light: #666666;
+  --color-border: #e0e0e0;
+  --spacing-unit: 1rem;
+  --grid-gap: 2rem;
+}
+
+.section-title {
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  text-align: center;
+  margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--grid-gap);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-unit);
+}
+
+.video-card {
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  background-color: #fff;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-thumbnail {
+  height: 150px;
+  background-color: #f0f0f0;
+  margin-bottom: var(--spacing-unit);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-title {
+  font-family: var(--font-primary);
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin: 0 var(--spacing-unit) 0.5rem;
+}
+
+.video-description {
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin: 0 var(--spacing-unit) 0.75rem;
+  line-height: 1.4;
+}
+
+.video-meta {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 var(--spacing-unit) var(--spacing-unit);
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+}
+/* Style 'popular' word inside the section title */
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+}
+
+/* Optional: make only the word 'popular' purple */
+.section-title {
+  font-weight: 700;
+}
+
+.section-title span.purple {
+  color: #C271FF;
+}
+
+/* Style author name (Phillip Massey) */
+.video-author {
+  color: #C271FF;
+  font-weight: 600;
+}
