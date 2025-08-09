@@ -1,0 +1,362 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ff5a5f;
+    --text-color: white;
+    --bg-overlay: rgba(0,0,0,0.6);
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(var(--bg-overlay), var(--bg-overlay)), url('images/hero-background.jpg') center/cover no-repeat;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.hero-content {
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    margin-bottom: 1.5rem;
+}
+
+.cta {
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* ---------- What we do section ---------- */
+.container { max-width:1100px; margin:0 auto; padding:0 1rem; }
+
+.what-we-do {
+  padding: 4rem 0;
+  background: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* responsive grid of service cards */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+}
+
+/* single card */
+.service {
+  background: #f7f7f7;
+  padding: 1.4rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+/* hover / focus lift */
+.service:hover,
+.service:focus-within {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* icon — the font icon will come from holberton css classes;
+   we add sizing and spacing here */
+.service-icon {
+  display: inline-block;
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 0.8rem;
+}
+
+/* title & text */
+.service h3 { margin: 0 0 0.5rem; font-size: 1.05rem; }
+.service p { margin: 0; color: #555; font-size: 0.95rem; }
+.our-results {
+  padding: 50px 20px;
+  background-color: #d73953;
+  color: white;
+  text-align: center;
+}
+
+.results-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.result {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-number {
+  font-size: 2em;
+  font-weight: bold;
+}
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Our Results Section */
+.our-results {
+    position: relative;
+    background: url('images/results-bg.jpg') no-repeat center/cover; /* replace with actual image */
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 80px 20px;
+}
+
+.our-results h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.our-results p {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Results Grid */
+.results-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Pentagon Shape as container */
+.pentagon {
+    position: relative;
+    width: 120px;
+    height: 0;
+    border-style: solid;
+    border-width: 0 60px 52px 60px;
+    border-color: transparent transparent #FF4B5C transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pentagon::after {
+    content: '';
+    position: absolute;
+    top: 52px;
+    left: -60px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 68px 60px 0 60px;
+    border-color: #FF4B5C transparent transparent transparent;
+    z-index: -1;
+}
+
+/* Text inside pentagon */
+.percentage {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+}
+
+.label {
+    font-size: 0.8rem;
+    color: white;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Contact section */
+.contact-section {
+    background: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form label {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    outline: none;
+    background: transparent;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ff4b5c;
+}
+
+/* CTA Button */
+.cta-btn {
+    display: inline-block;
+    background: #ff4b5c;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+    text-transform: uppercase;
+}
+
+.cta-btn:hover {
+    background: #e04352;
+}
+
+/* Footer */
+.footer {
+    background: #0b1623;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto 15px;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    height: 30px;
+}
+
+.footer-icons a img {
+    width: 20px;
+    margin: 0 8px;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+
+
+
