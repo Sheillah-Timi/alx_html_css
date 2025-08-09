@@ -1,0 +1,24 @@
+:root{
+  --accent:#FF6565;
+  --max-width:1000px;
+}
+
+*{box-sizing:border-box}
+body{font-family: "Source Sans Pro", Arial, sans-serif; margin:0; color:#111}
+.container{max-width:var(--max-width); margin:0 auto; padding:20px}
+.site-header{padding:20px 0; display:flex; align-items:center; justify-content:space-between}
+.site-header a{color:inherit; text-decoration:none; margin-left:12px}
+.site-header a:hover{color:var(--accent)}
+.logo{font-weight:700; letter-spacing:1px}
+
+.hero img{width:100%; height:auto; display:block}
+
+/* interactive rules */
+a:hover, a:active { color: var(--accent); }
+button:hover, button:active { opacity: 0.9; }
+
+/* Mobile layout breakpoint required by task */
+@media (max-width:480px){
+  .site-header{padding:12px}
+  .screenshots img{display:block;margin:12px auto; width:240px}
+}
